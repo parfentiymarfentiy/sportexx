@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SportEx Одесса | Спортивные товары — Бокс, MMA, Футбол, Единоборства</title>
+<meta name="description" content="Магазин спортивных товаров SportEx в Одессе. Боксёрские перчатки RDX, VENUM, EVERLAST, форма MMA, компрессионная одежда, защита. Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж. Доставка по Украине."/>
+<meta name="keywords" content="спортивные товары Одесса, боксёрские перчатки, MMA перчатки, форма единоборств, SportEx Одесса, ТЦ Новый Привоз, RDX VENUM EVERLAST купить Одесса"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://sportex.od.ua/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="SportEx — Спортивные товары в Одессе"/>
+<meta property="og:description" content="Боксёрские перчатки, MMA, компрессионная одежда. Одесса, Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж."/>
+<meta property="og:url" content="https://sportex.od.ua/"/>
+<meta property="og:locale" content="ru_UA"/>
+<link rel="icon" href="favicon.png" type="image/png">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportingGoodsStore",
+  "name":"SportEx",
+  "description":"Магазин спортивных товаров в Одессе. Бокс, MMA, единоборства, футбол.",
+  "url":"https://sportex.od.ua/",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"ул. Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж",
+    "addressLocality":"Одесса",
+    "addressCountry":"UA"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":46.4825,"longitude":30.7233},
+  "openingHours":"Mo-Su 09:00-21:00",
+  "priceRange":"₴₴"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════ CUSTOM CURSOR ═══════ -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- ═══════════════════════════════════════════════
+     SPLASH SCREEN — Language Selector
+═══════════════════════════════════════════════ -->
+
+<!-- ═══════ MOBILE NAV ═══════ -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-nav" id="closeNav">✕</button>
+  <a href="#categories" data-i18n="nav_categories">Категории</a>
+  <a href="#products" data-i18n="nav_products">Товары</a>
+  <a href="#why" data-i18n="nav_about">О магазине</a>
+  <a href="#contact" data-i18n="nav_contacts">Контакты</a>
+</div>
+
+<!-- ═══════ HEADER ═══════ -->
+<header id="header">
+  <a href="#" class="logo">
+    <div class="logo-icon">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="22,2 42,14 42,30 22,42 2,30 2,14" fill="none" stroke="#E8001D" stroke-width="1.5"/>
+        <polygon points="22,6 38,15.5 38,28.5 22,38 6,28.5 6,15.5" fill="rgba(232,0,29,0.08)"/>
+        <path d="M14 16 L22 28 L30 16" stroke="#E8001D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M18 22 H26" stroke="#E8001D" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="22" cy="22" r="2" fill="#E8001D"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-main">SportEx</span>
+      <span class="logo-sub" data-i18n="nav_contacts">Одесса · Спорт товары</span>
+    </div>
+  </a>
+
+  <nav>
+    <a href="#categories" data-i18n="nav_categories">Категории</a>
+    <a href="#products"   data-i18n="nav_products">Товары</a>
+    <a href="#why"        data-i18n="nav_about">О магазине</a>
+    <a href="#brands"     data-i18n="nav_brands">Бренды</a>
+    <a href="#contact"    data-i18n="nav_contacts">Контакты</a>
+  </nav>
+
+  <div class="header-right">
+    <!-- Language switch -->
+    <div class="lang-switch" aria-label="Language">
+      <button class="lang-switch-btn" data-lang="ua">UA</button>
+      <button class="lang-switch-btn" data-lang="ru">RU</button>
+      <button class="lang-switch-btn" data-lang="en">EN</button>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-diagonal"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span data-i18n="hero_badge">Работаем в Одессе</span>
+    </div>
+    <h1 class="hero-h1">
+      <span style="-webkit-text-stroke:0;color:var(--white);filter:none;opacity:1;" data-i18n="hero_line1">ТВОЙ</span>
+      <span data-i18n="hero_line2">SPORTEX</span>
+      <span style="-webkit-text-stroke:0;color:var(--white);filter:none;opacity:1;" data-i18n="hero_line3">УРОВЕНЬ</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero_sub">Профессиональное снаряжение для бокса, MMA, единоборств, футбола и активного спорта.</p>
+    <div class="hero-actions">
+      <a href="#categories" class="btn-primary" data-i18n="hero_btn_catalog">Смотреть каталог →</a>
+      <a href="#contact"    class="btn-outline"  data-i18n="hero_btn_map">Как нас найти</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">1<span>086</span></div>
+      <div class="stat-label" data-i18n="stat_products">Товаров</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>20</span>+</div>
+      <div class="stat-label" data-i18n="stat_brands">Брендов</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>96</span>%</div>
+      <div class="stat-label" data-i18n="stat_reviews">Позитивних відгуків</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <div class="scroll-dot"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ═══════ TICKER ═══════ -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item"><span class="ticker-dot"></span>БОКСЁРСКИЕ ПЕРЧАТКИ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>MMA ЭКИПИРОВКА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ФУТБОЛЬНАЯ ФОРМА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>КОМПРЕССИОННАЯ ОДЕЖДА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ЗАЩИТА ДЛЯ ЕДИНОБОРСТВ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>RDX · VENUM · EVERLAST · TWINS</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ПЛАВАНИЕ · ФИТНЕС · ЙОГА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>SPORTEX ОДЕССА</span>
+    <!-- dupe for loop -->
+    <span class="ticker-item"><span class="ticker-dot"></span>БОКСЁРСКИЕ ПЕРЧАТКИ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>MMA ЭКИПИРОВКА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ФУТБОЛЬНАЯ ФОРМА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>КОМПРЕССИОННАЯ ОДЕЖДА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ЗАЩИТА ДЛЯ ЕДИНОБОРСТВ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>RDX · VENUM · EVERLAST · TWINS</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ПЛАВАНИЕ · ФИТНЕС · ЙОГА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>SPORTEX ОДЕССА</span>
+  </div>
+</div>
+
+<!-- ═══════ CATEGORIES ═══════ -->
+<section id="categories">
+  <div class="section-label" data-i18n="section_label_assortment">Ассортимент</div>
+  <h2 class="section-title reveal" data-i18n="section_title_categories">ВСЕ КАТЕГОРИИ</h2>
+  <p class="section-desc reveal reveal-delay-1" data-i18n="section_desc_categories">От перчаток до формы — полный арсенал для вашего спорта.</p>
+
+  <div class="categories-grid">
+    <a href="#products" class="cat-card reveal reveal-delay-1">
+      <div class="cat-bg-art">🥊</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🥊</span>
+        <span class="cat-name" data-i18n="cat_boxing">Боксёрские перчатки</span>
+        <span class="cat-count" data-i18n="cat_boxing_sub">RDX, VENUM, EVERLAST, TWINS, BAD BOY</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-2">
+      <div class="cat-bg-art">🥋</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🥋</span>
+        <span class="cat-name" data-i18n="cat_mma">Единоборства</span>
+        <span class="cat-count" data-i18n="cat_mma_sub">Форма, шорты, экипировка MMA</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-3">
+      <div class="cat-bg-art">⚽</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">⚽</span>
+        <span class="cat-name" data-i18n="cat_football">Футбол</span>
+        <span class="cat-count" data-i18n="cat_football_sub">Форма клубов, мячи, аксессуары</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-4">
+      <div class="cat-bg-art">🛡️</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🛡️</span>
+        <span class="cat-name" data-i18n="cat_protection">Защита</span>
+        <span class="cat-count" data-i18n="cat_protection_sub">Голень, стопа, голеностоп, пах</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-1">
+      <div class="cat-bg-art">👕</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">👕</span>
+        <span class="cat-name" data-i18n="cat_compression">Компрессионная одежда</span>
+        <span class="cat-count" data-i18n="cat_compression_sub">Рашгарды, трико, комплекты</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-2">
+      <div class="cat-bg-art">🏊</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🏊</span>
+        <span class="cat-name" data-i18n="cat_swimming">Плавание</span>
+        <span class="cat-count" data-i18n="cat_swimming_sub">Маски, трубки, аксессуары</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-3">
+      <div class="cat-bg-art">🪖</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🪖</span>
+        <span class="cat-name" data-i18n="cat_tactical">Тактические товары</span>
+        <span class="cat-count" data-i18n="cat_tactical_sub">Балаклавы, снаряжение</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+    <a href="#products" class="cat-card reveal reveal-delay-4">
+      <div class="cat-bg-art">🧘</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🧘</span>
+        <span class="cat-name" data-i18n="cat_fitness">Фитнес и йога</span>
+        <span class="cat-count" data-i18n="cat_fitness_sub">Ролики, коврики, инвентарь</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════ PRODUCTS ═══════ -->
+<section id="products">
+  <div class="products-header reveal">
+    <div>
+      <div class="section-label" data-i18n="section_label_instock">В наличии</div>
+      <h2 class="section-title" data-i18n="section_title_products">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+    </div>
+    <button class="view-all" onclick="document.getElementById('products').scrollIntoView()" data-i18n="btn_view_all">Весь каталог →</button>
+  </div>
+  <!-- filled by script.js -->
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- ═══════ WHY ═══════ -->
+<section id="why">
+  <div class="section-label" data-i18n="section_label_why">Почему мы</div>
+  <h2 class="section-title reveal" data-i18n="section_title_why">SPORTEX — ВАШ ВЫБОР</h2>
+  <div class="why-grid">
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-num">01</div>
+      <span class="why-icon">🏆</span>
+      <div class="why-title" data-i18n="why1_title">Только проверенные бренды</div>
+      <p class="why-text" data-i18n="why1_text">Работаем исключительно с проверенными производителями: RDX, VENUM, EVERLAST, TWINS, GREEN HILL, BAD BOY. Никаких подделок.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-num">02</div>
+      <span class="why-icon">📦</span>
+      <div class="why-title" data-i18n="why2_title">Доставка по всей Украине</div>
+      <p class="why-text" data-i18n="why2_text">Отправляем Новой Почтой и Укрпочтой. Быстро, надёжно, с трекингом. Или заберите самовывозом в Одессе.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-3">
+      <div class="why-num">03</div>
+      <span class="why-icon">⭐</span>
+      <div class="why-title" data-i18n="why3_title">96% положительных отзывов</div>
+      <p class="why-text" data-i18n="why3_text">Более 870 продаж с рейтингом 96%. Наши клиенты возвращаются снова — это лучшая оценка нашей работы.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-4">
+      <div class="why-num">04</div>
+      <span class="why-icon">💬</span>
+      <div class="why-title" data-i18n="why4_title">Экспертная консультация</div>
+      <p class="why-text" data-i18n="why4_text">Поможем подобрать экипировку под ваш вид спорта, уровень подготовки и бюджет.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ BRANDS ═══════ -->
+<div id="brands">
+  <p class="brands-title">Официальные бренды в ассортименте</p>
+  <div class="brands-track">
+    <div class="brands-inner">
+      <span class="brand-name">RDX</span>
+      <span class="brand-name">VENUM</span>
+      <span class="brand-name">EVERLAST</span>
+      <span class="brand-name">TWINS</span>
+      <span class="brand-name">GREEN HILL</span>
+      <span class="brand-name">BAD BOY</span>
+      <span class="brand-name">UFC</span>
+      <span class="brand-name">ROOMAIF</span>
+      <span class="brand-name">DONIC</span>
+      <span class="brand-name">ZELART</span>
+      <span class="brand-name">JOMA</span>
+      <span class="brand-name">ASICS</span>
+      <span class="brand-name">NIKE</span>
+      <span class="brand-name">JORDAN</span>
+      <!-- dupe -->
+      <span class="brand-name">RDX</span>
+      <span class="brand-name">VENUM</span>
+      <span class="brand-name">EVERLAST</span>
+      <span class="brand-name">TWINS</span>
+      <span class="brand-name">GREEN HILL</span>
+      <span class="brand-name">BAD BOY</span>
+      <span class="brand-name">UFC</span>
+      <span class="brand-name">ROOMAIF</span>
+      <span class="brand-name">DONIC</span>
+      <span class="brand-name">ZELART</span>
+      <span class="brand-name">JOMA</span>
+      <span class="brand-name">ASICS</span>
+      <span class="brand-name">NIKE</span>
+      <span class="brand-name">JORDAN</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ CTA ═══════ -->
+<section id="cta">
+  <div class="cta-label" data-i18n="cta_label">Магазин в Одессе</div>
+  <h2 class="cta-title" data-i18n="cta_title">ПРИХОДИ — ВЫБИРАЙ ЛИЧНО</h2>
+  <p class="cta-sub" data-i18n="cta_sub">Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж · Одесса</p>
+  <div class="cta-actions">
+    <a href="#contact" class="btn-white" data-i18n="cta_btn_map">Как добраться →</a>
+    <a href="#products" class="btn-trans" data-i18n="cta_btn_catalog">Весь каталог</a>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact">
+  <div class="section-label" data-i18n="section_label_contacts">Найти нас</div>
+  <h2 class="section-title reveal" data-i18n="section_title_contacts">КОНТАКТЫ &amp; АДРЕС</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item reveal reveal-delay-1">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label" data-i18n="contact_address_label">Адрес</div>
+          <div class="contact-value" data-i18n="contact_address_val" data-i18n-html="true">г. Одесса, ул. Пантелеймоновская 25<br>ТЦ «Новый Привоз», 3 этаж</div>
+        </div>
+      </div>
+      <div class="contact-item reveal reveal-delay-2">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-label" data-i18n="contact_hours_label">Режим работы</div>
+          <div class="contact-value" data-i18n="contact_hours_val" data-i18n-html="true">Пн–Вс: 09:00 – 21:00<br>Без выходных</div>
+        </div>
+      </div>
+      <div class="contact-item reveal reveal-delay-3">
+        <div class="contact-icon">🚚</div>
+        <div>
+          <div class="contact-label" data-i18n="contact_delivery_label">Доставка</div>
+          <div class="contact-value" data-i18n="contact_delivery_val" data-i18n-html="true">Нова Пошта · Укрпошта<br>По всей Украине · Самовывоз</div>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrap reveal reveal-delay-2">
+      <div class="map-placeholder">
+        <span class="map-pin">📍</span>
+        <div class="map-text">
+          Одесса<br>
+          ул. Пантелеймоновская 25<br>
+          ТЦ «Новый Привоз», 3 этаж
+        </div>
+        <a href="https://maps.google.com/?q=Одесса+Пантелеймоновская+25" target="_blank" class="map-link" data-i18n="map_open">Открыть в Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg width="34" height="34" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="22,2 42,14 42,30 22,42 2,30 2,14" fill="none" stroke="#E8001D" stroke-width="1.5"/>
+              <path d="M14 16 L22 28 L30 16" stroke="#E8001D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="22" cy="22" r="2" fill="#E8001D"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main" style="font-size:20px">SportEx</span>
+            <span class="logo-sub">Одесса</span>
+          </div>
+        </a>
+      </div>
+      <p class="footer-desc" data-i18n="footer_desc">Профессиональное спортивное снаряжение. Работаем в Одессе, доставляем по всей Украине.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram">IG</a>
+        <a href="#" class="social-link" title="Facebook">FB</a>
+        <a href="#" class="social-link" title="Telegram">TG</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title" data-i18n="footer_catalog">Каталог</div>
+      <div class="footer-links">
+        <a href="#products" class="footer-link" data-i18n="cat_boxing">Боксёрские перчатки</a>
+        <a href="#products" class="footer-link" data-i18n="cat_mma">Единоборства</a>
+        <a href="#products" class="footer-link" data-i18n="cat_football">Футбол</a>
+        <a href="#products" class="footer-link" data-i18n="cat_compression">Компрессия</a>
+        <a href="#products" class="footer-link" data-i18n="cat_protection">Защита</a>
+        <a href="#products" class="footer-link" data-i18n="cat_swimming">Плавание</a>
+        <a href="#products" class="footer-link" data-i18n="cat_fitness">Фитнес / Йога</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title" data-i18n="footer_brands">Бренды</div>
+      <div class="footer-links">
+        <span class="footer-link">RDX</span>
+        <span class="footer-link">VENUM</span>
+        <span class="footer-link">EVERLAST</span>
+        <span class="footer-link">TWINS</span>
+        <span class="footer-link">GREEN HILL</span>
+        <span class="footer-link">BAD BOY</span>
+        <span class="footer-link">UFC</span>
+        <span class="footer-link">ROOMAIF</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title" data-i18n="footer_info">Информация</div>
+      <div class="footer-links">
+        <a href="#why"     class="footer-link" data-i18n="footer_about">О магазине</a>
+        <a href="#contact" class="footer-link" data-i18n="footer_contacts">Адрес и контакты</a>
+        <a href="#"        class="footer-link" data-i18n="footer_delivery">Доставка и оплата</a>
+        <a href="#"        class="footer-link" data-i18n="footer_guarantee">Гарантия и возврат</a>
+        <a href="#"        class="footer-link" data-i18n="footer_wholesale">Оптовые заказы</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy" data-i18n="footer_copy">© 2024 <span>SportEx</span> · Одесса · Все права защищены</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
